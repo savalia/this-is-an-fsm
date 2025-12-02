@@ -22,6 +22,11 @@
             "on_enter": "System is processing data.",
             "on_exit": "Processing complete."
         },
+		{
+            "name": "Monitoring",
+            "on_enter": "System is monitoring data.",
+            "on_exit": "Monitoring complete."
+        },
         {
             "name": "Stopping",
             "on_enter": "System is shutting down.",
@@ -37,7 +42,8 @@
         "Idle": {"start": "Starting"},
         "Starting": {"ready": "Waiting"},
         "Waiting": {"process": "Processing"},
-        "Processing": {"stop": "Stopping"},
+        "Processing": {"monitor": "Monitoring"},
+		"Monitoring": {"stop": "Stopping"},
         "Stopping": {"reset": "Idle"},
         "Unknown": {"reset": "Idle"}
     }

@@ -9,7 +9,7 @@ if __name__ == "__main__":
         # Code review comment -> Example: start from a different initial state.
         # fsm, states = load_fsm_from_json("fsm_config.json", start_state_name="Processing")
 
-        events = ["stop", "reset", "start", "ready", "process", "stop", "reset"]
+        events = ["stop", "reset", "start", "ready", "process", "monitor", "stop", "reset"]
         for event in events:
             print(f"\nEvent: {event}")
             try:
