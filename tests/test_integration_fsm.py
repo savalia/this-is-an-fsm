@@ -26,6 +26,8 @@ class TestFiniteStateMachineIntegration(unittest.TestCase):
         self.assertEqual(fsm.get_state(), "Waiting")
         fsm.trigger("process")
         self.assertEqual(fsm.get_state(), "Processing")
+        fsm.trigger("monitor")
+        self.assertEqual(fsm.get_state(), "Monitoring")
         fsm.trigger("stop")
         self.assertEqual(fsm.get_state(), "Stopping")
         fsm.trigger("reset")
