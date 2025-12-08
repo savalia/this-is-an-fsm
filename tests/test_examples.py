@@ -1,7 +1,7 @@
 # Unit tests for the examples using unittest framework
 import unittest
-
 from loader import load_fsm_from_json
+
 # Import example run functions (examples package required)
 from examples import starting, waiting, processing, monitoring, stopping
 
